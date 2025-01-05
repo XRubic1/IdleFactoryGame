@@ -4,7 +4,9 @@ const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true
-  }
+  },
+  basePath: '/IdleFactoryGame',
+  assetPrefix: '/IdleFactoryGame/',
 }
 
 module.exports = nextConfig 
