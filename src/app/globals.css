@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-light: #ffffff;
+  --background-dark: #1a1a1a;
+  --foreground-light: #1a1a1a;
+  --foreground-dark: #ffffff;
+}
+
+body {
+  background-color: var(--background-light);
+  color: var(--foreground-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--background-dark);
+    color: var(--foreground-dark);
+  }
+}
+
+select, input[type="range"] {
+  background-color: var(--background-light);
+  color: var(--foreground-light);
+  border-color: var(--foreground-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  select, input[type="range"] {
+    background-color: var(--background-dark);
+    color: var(--foreground-dark);
+    border-color: var(--foreground-dark);
+  }
+} 
